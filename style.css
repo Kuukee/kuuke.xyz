@@ -127,28 +127,14 @@ a.Kuuke:hover {
     line-height: 2rem;
 }
 
+.Reveal1 { margin-bottom: 2rem; }
 
-.Reveal1 {
-    margin-bottom: 2rem;
-}
-
-
-.infoBio {
-    background-color: #4F3931;
-    padding: 4em 2em;
-}
+.infoBio, .infoInterests, .infoSkills, .infoSocials { padding: 4em 2em; }
+.infoBio { background-color: #4F3931; }
+.infoInterests { background-color: #533B32; }
+.infoSkills { background-color: #563C32; }
 
 
-.infoInterests {
-    background-color: #533B32;
-    padding: 4em 2em;
-}
-
-
-.infoSkills {
-    background-color: #563C32;
-    padding: 4em 2em;
-}
 .skillContent li, .socContent li {
     padding-right: 5%;
     flex: 1 0 10%;
@@ -173,6 +159,11 @@ a.Kuuke:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+/* ================================================================= ================================================================= */
+/* Projects */
+
+
 
 /* ============================== ============================== */
 /* Color codes and stuff :3 */
