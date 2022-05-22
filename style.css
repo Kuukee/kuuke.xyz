@@ -162,9 +162,8 @@ a.Kuuke:hover {
     background-color: #583D33;
     padding: 4em 2em;
 }
-.socContent a:hover { 
-    color: #C9A47C; 
-}
+.socContent a { transition:all 1s ease-in-out; }
+.socContent a:hover { color: #C9A47C; }
 
 /* Since these both use icons to display text, I just grouped them, Makes my life easier. */
 .skillContent, .socContent {
