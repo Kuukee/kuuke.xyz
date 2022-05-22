@@ -1,2 +1,2 @@
-# Portfolio
-Just my portfolio, nothing special here.
+<h1>Portfolio</h1>
+<h2>Just my portfolio.</h2>
