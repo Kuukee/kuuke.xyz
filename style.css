@@ -6,8 +6,13 @@ html, body { /* makes the mountain image work */
     padding: 0;
     font-family: 'Roboto', sans-serif;
 
-    /* Color palette https://coolors.co/b0885d-c29666-aa895d-796046-4f3931-47342d-533b32-563c32-583d33-674f46 */
+    /* Color palette https://coolors.co/c9a47c-c69d71-c29666-aa895d-796046-4f3931-47342d-533b32-583d33 */
 }
+
+a { text-decoration: none; color: #C29666; }
+a:visited { text-decoration: none; color: #C29666; }
+a:hover { text-decoration: none; color: #C29666; }
+a:active { text-decoration: none; color: #C29666; }
 
 .navbar {
     z-index: 99;
@@ -44,12 +49,6 @@ ul {
     display:inline-block; 
     vertical-align:middle;
 }
-
-a { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
-
 
 #myBtn {
     display: none;
@@ -96,7 +95,7 @@ header {
     text-align: center;
 }
 
-.Kuuke {
+a.Kuuke {
     font-size: 7em;
     font-weight: bold;
     font-variant: normal;
@@ -106,7 +105,7 @@ header {
     margin: auto;
     transition:all 1s ease-in-out;
 }
-.Kuuke:hover {
+a.Kuuke:hover {
     color: #796046;
     text-shadow: 5px 5px #4F3931;
 }
@@ -150,25 +149,30 @@ header {
     background-color: #563C32;
     padding: 4em 2em;
 }
-.skillContent {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.skillContent li {
+.skillContent li, .socContent li {
     padding-right: 5%;
     flex: 1 0 10%;
     padding-bottom: 3%;
 }
-.skillContent i { font-size: 3em; }
+.skillContent i, .socContent i { font-size: 5em; }
 .skillContent span { font-size: 1em; }
 
 
 .infoSocials {
     background-color: #583D33;
     padding: 4em 2em;
+}
+.socContent a:hover { 
+    color: #C9A47C; 
+}
+
+/* Since these both use icons to display text, I just grouped them, Makes my life easier. */
+.skillContent, .socContent {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* ============================== ============================== */
