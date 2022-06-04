@@ -5,11 +5,6 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-  <meta content="Kuuke" property="og:title" />
-  <meta content="Literally just an about me but better" property="og:description" />
-  <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
-  <meta content="https://embed.com/embedimage.png" property="og:image" />
-  <meta content="#ffcff0" data-react-helmet="true" name="theme-color" />
 
   <link rel="stylesheet" href="style.css">
 
@@ -20,71 +15,68 @@
 
 
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-  <div class="navbar">
+  <nav>
     <a href="#Home">Home</a>
     <a href="#About">About</a>
-    <a href="#Projects">Projects</a>
-    <a href="#Status">Status</a>
-    <div class="the-blur"></div>
-  </div>
-
-  <header class="kuukeHeader" id="Home">
-    <div style="align-items:center" class="mainButton">
-      <a href="https://linktr.ee/Kuuke" target="_blank" class="Kuuke">Luis</a>
-      <h2 id="emphasis"><span title="Hover over pink items like these to see extra commentary :), (not always)">Aspiring Programmer</span></h2>
-    </div>
-  </header>
+    <a href="projects.html">Projects</a>
+    <a href="projects.html#Status">Status</a>
+  </nav>
 
   <main>
+    <div class="logo" id="Home">
+      <div style="align-items:center" class="mainButton">
+        <h1><a href="https://linktr.ee/Kuuke" target="_blank" class="Kuuke">Luis</a></h1>
+        <h2 id="emphasis"><span title="Hover over pink items like these to see extra commentary :), (not always)">Aspiring Programmer</span></h2>
+      </div>
+    </div>
+
     <div class="infoBlocks" id="About">
-      <div class="infoBio">
-          <h1 class="BioTitle Reveal1">Biography</h1>
+      <div class="infoBio container">
+          <h1>Biography</h1>
           <ul class="BioContent">
-          <li class="Reveal2">✖️ My name's <strong>Luís</strong>, or as some people know me <strong id="emphasis" title="Click on the big title for my linktr.ee">Kuuke</strong>.</li>
-          <li class="Reveal2">✖️ I am <b>18 years old</b> and I'm currently studying <span title="EIT, for the Belgians." id="emphasis">electrical engineering</span> in Highschool</li>
-          <li class="Reveal2">✖️ I am currently learning how to code in <span id="emphasis" title="Made a couple of projects with it, but I indeed need to learn more.">JS</span>, <span id="emphasis" title="plan on learning more of it after I get more comfortable with JS.">C#</span>, <span id="emphasis" title="Using this website as learning grounds.">HTML/CSS</span>.</li>
-          <li class="Reveal2">✖️ I plan on studying <span id="emphasis" title="I already have some Universities in mind but I plan on studying abroad.">Computer Sciences</span> after I graduate from Highschool as it's the direction that I feel most called to when I think about my future career.</li>
+            <li>✖️ My name's <strong>Luís</strong>, or as some people know me <strong id="emphasis" title="Click on the big title for my linktr.ee">Kuuke</strong>.</li>
+            <li>✖️ I am <b>18 years old</b> and I'm currently studying <span title="EIT, for the Belgians." id="emphasis">electrical engineering</span> in Highschool</li>
+            <li>✖️ I am currently learning how to code in <span id="emphasis" title="Made a couple of projects with it, but I indeed need to learn more.">JS</span>, <span id="emphasis" title="plan on learning more of it after I get more comfortable with JS.">C#</span>, <span id="emphasis" title="Using this website as learning grounds.">HTML/CSS</span>.</li>
+            <li>✖️ I plan on studying <span id="emphasis" title="I already have some Universities in mind but I plan on studying abroad.">Computer Sciences</span> after I graduate from Highschool as it's the direction that I feel most called to when I think about my future career.</li>
           </ul>
       </div>
 
-      <div class="infoInterests">
-          <h1 class="intTitle Reveal1">Interests</h1>
+      <div class="infoInterests container">
+          <h1>Interests</h1>
           <ul class="intContent">
-          <li class="Reveal2"><span id="emphasis">♥️ Electronics</span>, I love making projects on my Arduino, my dumb little breadboard circuits or anything of the sorts really, I can spend hours working on stuff like this and I always have fun.</li>
-          <li class="Reveal2"><span id="emphasis">♥️ Programming</span>, it's what I want to do later, I'd love to work on backend and maybe even fullstack development, I find it incredibly interesting and want to learn more about it.</li>
-          <li class="Reveal2"><span id="emphasis">♥️ Sports</span>, I love doing sports, will it be playing basketball with friends or doing my daily bike ride, you never waste time if you are enjoying it.</li>
-          <li class="Reveal2"><span id="emphasis">♥️ Gaming</span>, I've been playing games ever since I was a kid. They've been a part of my life for as long as I can remember, toying with redstone on Minecraft, getting killstreaks in Call of Duty or even enjoying some peace in Animal Crossing, I've played all types of games and I'm glad that gaming has been a part of my life.</li>
+            <li><span id="emphasis">♥️ Electronics</span>, I love making projects on my Arduino, my dumb little breadboard circuits or anything of the sorts really, I can spend hours working on stuff like this and I always have fun.</li>
+            <li><span id="emphasis">♥️ Programming</span>, it's what I want to do later, I'd love to work on backend and maybe even fullstack development, I find it incredibly interesting and want to learn more about it.</li>
+            <li><span id="emphasis">♥️ Sports</span>, I love doing sports, will it be playing basketball with friends or doing my daily bike ride, you never waste time if you are enjoying it.</li>
+            <li><span id="emphasis">♥️ Gaming</span>, I've been playing games ever since I was a kid. They've been a part of my life for as long as I can remember, toying with redstone on Minecraft, getting killstreaks in Call of Duty or even enjoying some peace in Animal Crossing, I've played all types of games and I'm glad that gaming has been a part of my life.</li>
           </ul>
       </div>
 
-      <div class="infoSkills">
-          <h1 class="skillTitle Reveal1">Skills</h1>
-          <ul class="skillContent">
-            <li class="Reveal2">
+      <div class="infoSkills container">
+          <h1>Skills</h1>
+          <ul class="skillContent icons">
+            <li>
               <i class="fa-brands fa-js-square"></i><br>
               <span>JavaScript</span>
             </li>
-            <li class="Reveal2">
+            <li>
               <i class="fa-solid fa-code"></i><br>
               <span>HTML</span>
             </li>
-            <li class="Reveal2">
+            <li>
               <i class="fa-brands fa-css3-alt"></i><br>
               <span>CSS</span>
             </li>
           </ul>
       </div>
 
-      <div class="infoSocials">
-          <h1 class="socTitle Reveal1">My Socials :)</h1>
-          <ul class="socContent">
-            <li class="Reveal2">
+      <div class="infoSocials container">
+          <h1>My Socials :)</h1>
+          <ul class="socContent icons">
+            <li>
               <a href="https://discord.gg/WZkcsPCge8" target="_blank"><i class="fa-brands fa-discord"></i></a><br>
               <span>Discord Server</span>
             </li>
-            <li class="Reveal2">
+            <li>
               <a href="https://github.com/Kuukee" target="_blank"><i class="fa-brands fa-github"></i></a><br>
               <span>Github</span>
             </li>
@@ -95,9 +87,11 @@
 
 <script src="main.js"></script> <!--Just loads the code after the page loads entirely, I need to do this so the "scroll to top" button doesn't break-->
 <script>
-    /* This makes the Information blocks appear in this order: Header -> content, I just made an extra little class for it, why not yk? */
-    ScrollReveal().reveal('.Reveal1', {duration:'500', distance:'20%', origin:'left'});
-    ScrollReveal().reveal('.Reveal2', {delay:'100', interval:'150', distance:'10%', origin:'left'});
+    /* This makes the Information blocks appear in this order: .logo -> content, I just made an extra little class for it, why not yk? */
+    ScrollReveal().reveal('h1', {delay:'100',duration:'1100', distance:'20%', origin:'left'});
+    ScrollReveal().reveal('h2', {delay:'800', duration:'1100', distance:'20%', origin:'left'});
+    ScrollReveal().reveal('.container h1', {delay:'100', distance:'10%', origin:'left'});
+    ScrollReveal().reveal('li', {delay:'600', interval:'150', distance:'10%', origin:'left'});
 </script>
 
 </body>

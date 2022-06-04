@@ -1,0 +1,148 @@
+:root {
+    --cedar-chest: #db504aff;
+    --flame: #dd6a39ff;
+    --cadmium-orange: #df8328ff;
+    --gamboge: #e19c17ff;
+    --orange-yellow: #e3b505ff;
+
+    /* https://coolors.co/db504a-dd6a39-df8328-e19c17-e3b505 */
+}
+
+html, body { /* makes the mountain image work */
+    z-index: 0;
+    background-color: #1b1b1b;
+    color: var(--flame);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:hover, a:active, a:focus { text-decoration: none;}
+ul {
+    list-style-type: none;
+    display:inline-block; 
+    vertical-align:middle;
+}
+/* I like clearing out any customization of links unless I specify it. */
+
+nav {
+    z-index: 99;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px); 
+}
+
+nav > a {
+    align-items: center;
+    text-align: center;
+    float: left;
+    display: inline;
+    padding: 14px 15px;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--flame);
+}
+nav > a:hover { background: rgba(255, 255, 255, 0.05); }
+nav > a:active { color: var(--cedar-chest); }
+
+/* Main page content */
+
+.logo {
+    margin: auto;
+    height:100vh;
+    height: var( — app-height);
+    text-align: center;
+}
+.logo h1 {
+    padding-top: 12%;
+    margin: auto;
+    font-size: 7em;
+    text-align: center;
+    font-weight: bold;
+    color: var(--whitish);
+    z-index: 1;
+}
+.logo span { transition:all 1s ease-in-out; } /* Fixes hover hitboxes */
+.logo span:hover { text-shadow: 5px 5px #000000; }
+.logo h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    width: 50%;
+}
+
+/* Main Area */
+
+.icons { width: 120px; }
+
+#Projects, #Status { 
+    padding: 4em 2em;
+    margin: auto;
+    font-size: 1.2em;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+.panel {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+
+    word-wrap: normal;
+    align-items: center;
+    text-align: left;
+    padding: 0em 0.75em; 
+
+    background-color: #DD6A39;
+    color: black;
+    border-radius: 10px;
+
+    transition:all 0.5s ease-in-out;
+}
+.panel:hover {
+    background-color: #e97443;
+    box-shadow: 10px 10px #DB504A;
+}
+
+#btn {
+    text-align: left;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #DD6A39;
+    transition:all 0.3s ease-in-out;
+}
+
+#btn:hover {
+    background-color: #DD6A39;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.botStatus {
+    color: #DB504A;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="panel"] {
+      max-width: 200px;
+    }
+    [class="logo"] {
+        font-size: 10px
+    }
+}
+
+/* colors */
+#emphasis {
+    color:#ffcff0;
+    font-weight: bold;
+}
