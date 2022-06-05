@@ -1,6 +1,6 @@
 :root {
     --cedar-chest: #db504aff;
-    --flame: #dd6a39ff;
+    --flame: #dd6a39;
     --cadmium-orange: #df8328ff;
     --gamboge: #e19c17ff;
     --orange-yellow: #e3b505ff;
@@ -105,6 +105,7 @@ nav > a:active { color: var(--cedar-chest); }
 }
 
 #arrow {
+    filter: invert(48%) sepia(73%) saturate(551%) hue-rotate(331deg) brightness(91%) contrast(90%);
     margin-top: 5%;
     width:10%;
     height:10%;
