@@ -55,14 +55,15 @@ nav > a:active { color: var(--cedar-chest); }
     height:100vh;
     height: var( — app-height);
     text-align: center;
+    align-items: center;
 }
 .logo h1 {
     padding-top: 12%;
     margin: auto;
+    padding-left: 0;
     font-size: 7em;
     text-align: center;
     font-weight: bold;
-    color: var(--whitish);
     z-index: 1;
 }
 .logo span { transition:all 1s ease-in-out; } /* Fixes hover hitboxes */
@@ -76,24 +77,62 @@ nav > a:active { color: var(--cedar-chest); }
 
 /* Main Area */
 
-.icons { width: 120px; }
+
+.holder {
+    /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.ellipse {
+    position: relative;
+    background: radial-gradient(ellipse, transparent, transparent 7px, #dd6a39ff 7px, #dd6a39ff 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 100%;
+    height: 20px;
+}
+
+.ellipse2 {
+    position: relative;
+    top: 0px;
+    left: 18px;
+    width: 100%;
+    background-position: 0px -20px;
+}
+
+#arrow {
+    margin-top: 5%;
+    width:10%;
+    height:10%;
+    animation: point 1s ease-in-out infinite;
+}
+
+/* Animation for arrow */
+@keyframes point{  
+50% { transform: translateY(10px); }
+}
 
 #Projects, #Status { 
     padding: 4em 2em;
     margin: auto;
     font-size: 1.2em;
 }
-.container {
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%;
     margin: auto;
 }
+.panel h2 { text-shadow:1px 1px 3px rgba(0, 0, 0, 0.671); }
 .panel {
     max-width: 300px;
     height: auto;
-    margin-top: 20px;
+    margin: 20px;
 
     word-wrap: normal;
     align-items: center;
@@ -103,12 +142,13 @@ nav > a:active { color: var(--cedar-chest); }
     background-color: #DD6A39;
     color: black;
     border-radius: 10px;
-
+    
     transition:all 0.5s ease-in-out;
 }
 .panel:hover {
     background-color: #e97443;
-    box-shadow: 10px 10px #DB504A;
+    box-shadow: 15px 15px #DB504A;
+    animation: point 0.5s linear;
 }
 
 #btn {
@@ -116,13 +156,13 @@ nav > a:active { color: var(--cedar-chest); }
     color: black;
     padding: 8px;
     border-radius: 5px;
-    background-color: #DD6A39;
+    background-color: #db5a23;
     transition:all 0.3s ease-in-out;
 }
 
 #btn:hover {
     background-color: #DD6A39;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px #DB504A;
 }
 
 .botStatus {
@@ -141,8 +181,9 @@ nav > a:active { color: var(--cedar-chest); }
     }
 }
 
-/* colors */
+/* colors and other stuff*/
 #emphasis {
     color:#ffcff0;
     font-weight: bold;
 }
+.icons { width: 120px; }

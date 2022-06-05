@@ -1,1 +1,3 @@
 //Emtpyness....
+scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+console.log(scrollPosition);

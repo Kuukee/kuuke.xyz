@@ -25,11 +25,34 @@
         <div class="logo">
             <h1><span>Projects & Status</span></h1>
             <h2 id="emphasis">Page for personal projects and status for them</h2>
+        
+            <div class="holder">
+                <div class="ellipse"></div>
+                <div class="ellipse ellipse2"></div>
+            </div>
+
+            <image src="Media/images/arrow.svg" alt="Arrow pointing down" id="arrow"></image>
         </div>
 
         <div id="Projects">
             <h1>Projects</h1>
-            <div class="container">
+            <div class="wrapper">
+                <div class="panel">
+                    <h2>Fumo bot</h2>
+                    <p>My discord bot dedicated to posting fumos, yes I am dead serious.</p>
+                    <p><a id="btn" href="https://github.com/Kuukee/fumo-bot" target="_blank">View Project</a></p>                    
+                </div>
+                <div class="panel">
+                    <h2>Portfolio</h2>
+                    <p>This website, used to learn HTML, CSS and JS</p>
+                    <p><a id="btn" href="https://github.com/Kuukee/Portfolio" target="_blank">View Project</a></p>
+                </div>
+                <div class="panel">
+                    <h2>KoffiBD</h2>
+                    <p>A simplistic BetterDiscord Theme to bring a coffee-like look to everything.</p>
+                    <p>Makes it easier on the eyes.</p>
+                    <p><a id="btn" href="https://github.com/Kuukee/KoffiBD" target="_blank">View Project</a></p>
+                </div>
                 <div class="panel">
                     <h2>Fumo bot</h2>
                     <p>My discord bot dedicated to posting fumos, yes I am dead serious.</p>
@@ -51,7 +74,7 @@
 
         <div id="Status">
             <h1>Status</h1>
-            <div class="container">
+            <div class="wrapper">
                 <div class="panel">
                     <h2>Fumo bot Status</h2>
                     <p id="status">Checking bot status.</p>
@@ -66,9 +89,9 @@
 
 <script>
     /* This makes the Information blocks appear in this order: .logo -> content, I just made an extra little class for it, why not yk? */
-    ScrollReveal().reveal('h1', {delay:'100',duration:'1100', distance:'20%', origin:'left'});
+    ScrollReveal().reveal('h1', {delay:'100',interval:'150',duration:'1100', distance:'20%', origin:'left'});
     ScrollReveal().reveal('.logo h2', {delay:'800', duration:'1100', distance:'20%', origin:'left'});
-    ScrollReveal().reveal('li', {delay:'600', interval:'150', distance:'10%', origin:'left'});
+    ScrollReveal().reveal('.panel', {delay:'600', interval:'150', distance:'10%', origin:'left'});
 </script>
 
 </html>
