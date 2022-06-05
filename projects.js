@@ -12,7 +12,8 @@ function secondsToHms(d) {
 
 setInterval(async () => {
     try {
-      const resp = await fetch("http://localhost:8080");
+      const resp = await fetch("http://kuuke.xyz:8080");
+      console.log(resp);
       const uptime = await resp.text();
       // Optionally transform into minutes for extra points
       document.getElementById("status").textContent = "Bot has been online for: " + secondsToHms(uptime);
