@@ -32,7 +32,7 @@
 
     <div class="infoBlocks" id="About">
       <div class="infoBio container">
-          <h1>Biography</h1>
+          <h2>Biography</h2>
           <ul class="BioContent">
             <li>✖️ My name's <strong>Luís</strong>, or as some people know me <strong id="emphasis" title="Click on the big title for my linktr.ee">Kuuke</strong>.</li>
             <li>✖️ I am <b>18 years old</b> and I'm currently studying <span title="EIT, for the Belgians." id="emphasis">electrical engineering</span> in Highschool</li>
@@ -42,7 +42,7 @@
       </div>
 
       <div class="infoInterests container">
-          <h1>Interests</h1>
+          <h2>Interests</h2>
           <ul class="intContent">
             <li><span id="emphasis">♥️ Electronics</span>, I love making projects on my Arduino, my dumb little breadboard circuits or anything of the sorts really, I can spend hours working on stuff like this and I always have fun.</li>
             <li><span id="emphasis">♥️ Programming</span>, it's what I want to do later, I'd love to work on backend and maybe even fullstack development, I find it incredibly interesting and want to learn more about it.</li>
@@ -52,35 +52,35 @@
       </div>
 
       <div class="infoSkills container">
-          <h1>Skills</h1>
-          <ul class="skillContent icons">
-            <li>
+          <h2>Skills</h2>
+          <div class="icons">
+            <div>
               <i class="fa-brands fa-js-square"></i><br>
               <span>JavaScript</span>
-            </li>
-            <li>
+            </div>
+            <div>
               <i class="fa-solid fa-code"></i><br>
               <span>HTML</span>
-            </li>
-            <li>
+            </div>
+            <div>
               <i class="fa-brands fa-css3-alt"></i><br>
               <span>CSS</span>
-            </li>
-          </ul>
+            </div>
+          </div>
       </div>
 
       <div class="infoSocials container">
-          <h1>My Socials :)</h1>
-          <ul class="socContent icons">
-            <li>
+          <h2>My Socials :)</h2>
+          <div class="socContent icons">
+            <div>
               <a href="https://discord.gg/WZkcsPCge8" target="_blank"><i class="fa-brands fa-discord"></i></a><br>
               <span>Discord Server</span>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="https://github.com/Kuukee" target="_blank"><i class="fa-brands fa-github"></i></a><br>
               <span>Github</span>
-            </li>
-          </ul>
+            </div>
+          </div>
       </div>
     </div>
 </main>
@@ -90,8 +90,9 @@
     /* This makes the Information blocks appear in this order: .logo -> content, I just made an extra little class for it, why not yk? */
     ScrollReveal().reveal('h1', {delay:'100',duration:'1100', distance:'20%', origin:'left'});
     ScrollReveal().reveal('h2', {delay:'800', duration:'1100', distance:'20%', origin:'left'});
-    ScrollReveal().reveal('.container h1', {delay:'100', distance:'10%', origin:'left'});
+    ScrollReveal().reveal('.container h2', {delay:'100', distance:'10%', origin:'left'});
     ScrollReveal().reveal('li', {delay:'600', interval:'150', distance:'10%', origin:'left'});
+    ScrollReveal().reveal('.icons', {delay:'600', interval:'150', distance:'10%', origin:'left'});
 </script>
 
 </body>

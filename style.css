@@ -99,35 +99,58 @@ a.Kuuke:hover { text-shadow: 5px 5px #4F3931; }
     line-height: 2rem;
 }
 
-.container { padding: 4em 2em; }
+.container { padding: 4rem 0em;}
+ul { margin:0; padding: 0;}
+.container li {
+    margin-left:0;
+    padding-left: 5rem;
+}
+.container h2 {font-size:2rem; padding-left: 2em}
+
+
 .infoBio { background-color: #4F3931; }
 .infoInterests { background-color: #533B32; }
 .infoSkills { background-color: #563C32; }
 .infoSocials { background-color: #583D33; }
 
-li span { font-size: 1em; }
-i { font-size: 5em; 
-    flex: 1 0 10%;
-    padding-bottom: 3%;
-}
-
-.socContent a { transition:all 1s ease-in-out; }
-.socContent a:hover { color: #C9A47C; }
+.socContent a { transition:all 0.5s ease-in-out; }
+.socContent a:hover { color: #d3b28e; }
 
 /* Since these both use icons to display text, I just grouped them, Makes my life easier. */
-.skillContent, .socContent {
+.icons {
     align-items: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 1rem;
+    padding-left: 0;
+}
+.icons span {font-size: 1.3rem;}
+i { 
+    font-size: 5rem; 
+    padding-bottom: 3%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
     /* For mobile phones: */
-    [class="logo"] {
+    .logo {
         font-size: 10px;
         padding-top: 100px;
+    }
+    .icons {
+        padding: 0rem 0.5rem;
+        font-size: 1.3rem;
+    }
+    i {
+        font-size: 4rem;
+    }
+    .container h2 {
+        padding-left: 2rem;
+    }
+    .container li {
+        padding-left: 4rem;
+        max-width:80%;
     }
 }
 
